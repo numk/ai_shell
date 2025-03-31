@@ -106,6 +106,5 @@ class AI:
 
 
 if __name__ == '__main__':
-    api_key = 'pzDGIlzOsZSUxAlbDekc:YSVsceOPQtlPtbRMEePI'
-    app = AI(api_key)
+    app = AI()
     app.run()
