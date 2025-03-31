@@ -90,7 +90,7 @@ class AI:
         }
         response = self.session.post("https://spark-api-open.xf-yun.com/v1/chat/completions", headers=headers, json=payload)
         response_data = response.json()
-        print(response_data)
+        # print(response_data)
         content = response_data["choices"][0]["message"]["content"]
         return content
 
@@ -100,7 +100,7 @@ class AI:
             print("例如: ai 通过端口查询进程ID并杀掉该进程")
             sys.exit(1)
         user_query = " ".join(sys.argv[1:])
-        print(f'用户请求: {user_query}')
+        # print(f'用户请求: {user_query}')
         answer = self.get_answer_by_xunfei(user_query)
         print(answer)
 
